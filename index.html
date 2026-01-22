@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Hub | מכללת בר-אוריין</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <img src="images/logo.png" alt="בר-אוריין" class="nav-logo">
+            <div class="nav-links">
+                <a href="#brand">ספר מותג</a>
+                <a href="#personas">פרסונות</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="images/logo.png" alt="מכללת בר-אוריין" class="hero-logo">
+            <p class="hero-tagline">המכללה למקצועות הדאטה</p>
+            <h1 class="hero-slogan">ממידע לתוצאות בעידן ה-AI</h1>
+            <div class="hero-buttons">
+                <a href="#brand" class="btn btn-primary">ספר מותג</a>
+                <a href="#personas" class="btn btn-secondary">קהלי יעד</a>
+            </div>
+        </div>
+        <div class="hero-decoration"></div>
+    </header>
+
+    <!-- Brand Guidelines Section -->
+    <section id="brand" class="section brand-section">
+        <div class="container">
+            <h2 class="section-title">ספר מותג</h2>
+
+            <!-- Brand Identity -->
+            <div class="brand-block">
+                <h3 class="block-title">
+                    <span class="block-icon">🏛️</span>
+                    זהות מותגית
+                </h3>
+                <div class="identity-grid">
+                    <div class="identity-card">
+                        <h4>שם המותג</h4>
+                        <p class="brand-name">מכללת בר-אוריין</p>
+                    </div>
+                    <div class="identity-card">
+                        <h4>תגלין</h4>
+                        <p>"המכללה למקצועות הדאטה"</p>
+                    </div>
+                    <div class="identity-card">
+                        <h4>סלוגן ראשי</h4>
+                        <p class="highlight">"ממידע לתוצאות בעידן ה-AI"</p>
+                    </div>
+                    <div class="identity-card">
+                        <h4>מייסדת</h4>
+                        <p>ד"ר ענת קלומל-צוייג</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Archetype -->
+            <div class="brand-block">
+                <h3 class="block-title">
+                    <span class="block-icon">🎭</span>
+                    ארכיטיפ המותג
+                </h3>
+                <div class="archetype-container">
+                    <div class="archetype-card sage">
+                        <div class="archetype-icon">🧙</div>
+                        <h4>Sage - החכם</h4>
+                        <ul>
+                            <li>מומחיות ועומק מקצועי</li>
+                            <li>דאטה, מתודולוגיה, מחקר</li>
+                            <li>חשיבה מערכתית ואנליטית</li>
+                            <li>ידע מוכח ומבוסס</li>
+                        </ul>
+                    </div>
+                    <div class="archetype-plus">+</div>
+                    <div class="archetype-card caregiver">
+                        <div class="archetype-icon">🤝</div>
+                        <h4>Caregiver - המטפל</h4>
+                        <ul>
+                            <li>ליווי אישי וצמוד</li>
+                            <li>קהילה תומכת</li>
+                            <li>אמפתיה והבנה</li>
+                            <li>תחושת "לא לבד"</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="archetype-summary">שילוב בין רצינות מקצועית ומומחיות לבין חמימות, ליווי אישי וקהילה.</p>
+            </div>
+
+            <!-- Color Palette -->
+            <div class="brand-block">
+                <h3 class="block-title">
+                    <span class="block-icon">🎨</span>
+                    פלטת צבעים
+                </h3>
+                <p class="block-subtitle">לחצו על צבע כדי להעתיק את הקוד</p>
+                <div class="color-grid">
+                    <div class="color-card" data-color="#0170B9" onclick="copyColor(this)">
+                        <div class="color-swatch" style="background: #0170B9;"></div>
+                        <div class="color-info">
+                            <span class="color-name">כחול עמוק (Navy)</span>
+                            <span class="color-hex">#0170B9</span>
+                            <span class="color-usage">צבע ראשי, כותרות, לוגו</span>
+                        </div>
+                    </div>
+                    <div class="color-card" data-color="#f28e37" onclick="copyColor(this)">
+                        <div class="color-swatch" style="background: #f28e37;"></div>
+                        <div class="color-info">
+                            <span class="color-name">כתום</span>
+                            <span class="color-hex">#f28e37</span>
+                            <span class="color-usage">CTA, הדגשות, אקסנטים</span>
+                        </div>
+                    </div>
+                    <div class="color-card" data-color="#4AA8C7" onclick="copyColor(this)">
+                        <div class="color-swatch" style="background: #4AA8C7;"></div>
+                        <div class="color-info">
+                            <span class="color-name">תכלת</span>
+                            <span class="color-hex">#4AA8C7</span>
+                            <span class="color-usage">דאטה, טכנולוגיה</span>
+                        </div>
+                    </div>
+                    <div class="color-card" data-color="#7C3AED" onclick="copyColor(this)">
+                        <div class="color-swatch" style="background: #7C3AED;"></div>
+                        <div class="color-info">
+                            <span class="color-name">סגול</span>
+                            <span class="color-hex">#7C3AED</span>
+                            <span class="color-usage">AI, חדשנות, עתיד</span>
+                        </div>
+                    </div>
+                    <div class="color-card" data-color="#64748B" onclick="copyColor(this)">
+                        <div class="color-swatch" style="background: #64748B;"></div>
+                        <div class="color-info">
+                            <span class="color-name">אפור חם</span>
+                            <span class="color-hex">#64748B</span>
+                            <span class="color-usage">טקסטים, איזון ויזואלי</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-ratio">
+                    <h4>יחסי צבעים (70-20-10)</h4>
+                    <div class="ratio-bar">
+                        <div class="ratio-segment" style="width: 70%; background: #0170B9;">70%</div>
+                        <div class="ratio-segment" style="width: 20%; background: #4AA8C7;">20%</div>
+                        <div class="ratio-segment" style="width: 10%; background: #f28e37;">10%</div>
+                    </div>
+                    <div class="ratio-labels">
+                        <span>דומיננטי (Navy/לבן)</span>
+                        <span>משני (תכלת/אפור)</span>
+                        <span>אקסנט (כתום)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typography -->
+            <div class="brand-block">
+                <h3 class="block-title">
+                    <span class="block-icon">🖋️</span>
+                    טיפוגרפיה
+                </h3>
+                <div class="typography-grid">
+                    <div class="type-card">
+                        <span class="type-label">כותרות</span>
+                        <p class="type-sample heading-sample">Assistant Bold</p>
+                        <span class="type-specs">24-48px | Bold</span>
+                    </div>
+                    <div class="type-card">
+                        <span class="type-label">טקסט רץ</span>
+                        <p class="type-sample body-sample">Assistant Regular - הפונט הראשי לכל הטקסטים</p>
+                        <span class="type-specs">16-18px | Regular</span>
+                    </div>
+                    <div class="type-card">
+                        <span class="type-label">הדגשות</span>
+                        <p class="type-sample semibold-sample">Assistant SemiBold</p>
+                        <span class="type-specs">16-18px | SemiBold</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tone of Voice -->
+            <div class="brand-block">
+                <h3 class="block-title">
+                    <span class="block-icon">💬</span>
+                    טון דיבור
+                </h3>
+                <div class="tone-principle">
+                    <span class="principle-badge">עיקרון מנחה</span>
+                    <p class="principle-text">"AI כאן ולכולם" - הנגשת טכנולוגיה וידע לכל אדם</p>
+                </div>
+                <div class="tone-grid">
+                    <div class="tone-card do">
+                        <h4>✅ מה אנחנו עושים</h4>
+                        <ul>
+                            <li><strong>ישיר ומכבד</strong> - בגובה העיניים, לא מתנשאים</li>
+                            <li><strong>נגיש</strong> - מסבירים פשוט, הקהל לא טכני</li>
+                            <li><strong>מעצים</strong> - AI זה כלי שעוזר, לא מאיים</li>
+                            <li><strong>פרקטי</strong> - דוגמאות קונקרטיות, תוצרים, מספרים</li>
+                            <li><strong>אמפתי</strong> - מבינים חששות וקשיים</li>
+                        </ul>
+                    </div>
+                    <div class="tone-card dont">
+                        <h4>❌ מה אנחנו לא עושים</h4>
+                        <ul>
+                            <li><strong>ז'רגון טכני</strong> - להסביר במילים פשוטות</li>
+                            <li><strong>הייפ מוגזם</strong> - "מהפכה מטורפת", סופרלטיבים</li>
+                            <li><strong>שפה מכירתית אגרסיבית</strong> - לחץ, דחיפות מלאכותית</li>
+                            <li><strong>הבטחות שווא</strong> - "100% השמה", "הכי טוב"</li>
+                            <li><strong>הפחדה</strong> - "תישארו מאחור"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tone Examples -->
+                <div class="tone-examples">
+                    <h4>דוגמאות</h4>
+                    <div class="example-card">
+                        <div class="example-wrong">
+                            <span class="example-label">❌ לא נכון</span>
+                            <p>"המהפכה המטורפת של ה-AI מגיעה! אל תישארו מאחור!"</p>
+                        </div>
+                        <div class="example-right">
+                            <span class="example-label">✅ נכון</span>
+                            <p>"למדו להפוך נתונים להחלטות עסקיות - עם דאטה, אסטרטגיה ו-AI"</p>
+                        </div>
+                    </div>
+                    <div class="example-card">
+                        <div class="example-wrong">
+                            <span class="example-label">❌ לא נכון</span>
+                            <p>"הירשמו עכשיו או תפספסו את ההזדמנות האחרונה!"</p>
+                        </div>
+                        <div class="example-right">
+                            <span class="example-label">✅ נכון</span>
+                            <p>"רוצים לראות איך זה עובד? בואו לשיחת ייעוץ חינם - נבין יחד איזה מסלול מתאים לכם."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- USP -->
+            <div class="brand-block">
+                <h3 class="block-title">
+                    <span class="block-icon">🎯</span>
+                    משפטי בידול (USP)
+                </h3>
+                <div class="usp-tabs">
+                    <button class="usp-tab active" data-tab="1">פרקטי</button>
+                    <button class="usp-tab" data-tab="2">מקצועי</button>
+                    <button class="usp-tab" data-tab="3">חם</button>
+                    <button class="usp-tab" data-tab="4">ייחודי</button>
+                    <button class="usp-tab" data-tab="5">מפורט</button>
+                    <button class="usp-tab" data-tab="6">אקדמי</button>
+                </div>
+                <div class="usp-content">
+                    <div class="usp-panel active" data-panel="1">
+                        <blockquote>"מכללת בר-אוריין מכשירה אנשי מקצוע להפוך מידע לתוצאות עסקיות מדידות - באמצעות דאטה, מתודולוגיות ייחודיות ויישומי AI מעשיים."</blockquote>
+                        <div class="usp-usage">
+                            <strong>מתי להשתמש:</strong> דפי נחיתה כלליים, פרסום ממומן, קהל רחב
+                        </div>
+                    </div>
+                    <div class="usp-panel" data-panel="2">
+                        <blockquote>"המכללה היחידה בישראל שמשלבת מתודולוגיות אסטרטגיות מוכחות עם כלי דאטה ו-AI מתקדמים - כדי להכשיר יועצים, מנהלים ואנליסטים שיודעים לא רק לנתח, אלא גם להוביל שינוי."</blockquote>
+                        <div class="usp-usage">
+                            <strong>מתי להשתמש:</strong> קורס ייעוץ אסטרטגי, B2B, מנהלים בכירים, LinkedIn
+                        </div>
+                    </div>
+                    <div class="usp-panel" data-panel="3">
+                        <blockquote>"בר-אוריין לא רק מלמדת AI ודאטה - אנחנו מלווים אותך בתהליך שינוי מקצועי שלם: מלמידת כלים מתקדמים, דרך מתודולוגיות אסטרטגיות, ועד לבניית תיק עבודות ממשי."</blockquote>
+                        <div class="usp-usage">
+                            <strong>מתי להשתמש:</strong> מתחילים, מחליפי קריירה, נשים בהסבה, פוסטים רגשיים
+                        </div>
+                    </div>
+                    <div class="usp-panel" data-panel="4">
+                        <blockquote>"מידענות תוצאתית: בר-אוריין מלמדת איך להפוך מידע להחלטות, והחלטות לתוצאות עסקיות - באמצעות דאטה אנליטיקס, חשיבה אסטרטגית וכלי AI שעובדים."</blockquote>
+                        <div class="usp-usage">
+                            <strong>מתי להשתמש:</strong> חומרים מקצועיים, מצגות, מאמרים, קהל שמכיר אותנו
+                        </div>
+                    </div>
+                    <div class="usp-panel" data-panel="5">
+                        <blockquote>"הבית לאסטרטגיה, דאטה ו-AI: בר-אוריין משלבת מתודולוגיות ניהול ייחודיות, כלי דאטה מתקדמים (Excel, Power BI, Python) ויישומי בינה מלאכותית מעשיים - כדי להכשיר אותך למקצועות העתיד."</blockquote>
+                        <div class="usp-usage">
+                            <strong>מתי להשתמש:</strong> דף הבית, חומרי שיווק כלליים, קהל טכני
+                        </div>
+                    </div>
+                    <div class="usp-panel" data-panel="6">
+                        <blockquote>"המכללה למקצועות הדאטה: בר-אוריין מכשירה אנליסטים, יועצים ומנהלים לחשוב בדרך של System Thinking - לנתח דאטה, לבנות אסטרטגיות ולהטמיע AI בארגונים מורכבים."</blockquote>
+                        <div class="usp-usage">
+                            <strong>מתי להשתמש:</strong> C-Level, חומרים אקדמיים, כנסים, B2B לארגונים גדולים
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Methodologies -->
+            <div class="brand-block">
+                <h3 class="block-title">
+                    <span class="block-icon">🧠</span>
+                    מתודולוגיות ייחודיות
+                </h3>
+                <div class="methods-grid">
+                    <div class="method-card">
+                        <div class="method-icon">📊</div>
+                        <h4>מידענות תוצאתית</h4>
+                        <p>גישה מערכתית להפיכת מידע לתוצאות מדידות</p>
+                        <div class="method-flow">
+                            <span>מידע</span>
+                            <span class="arrow">→</span>
+                            <span>תובנות</span>
+                            <span class="arrow">→</span>
+                            <span>החלטות</span>
+                            <span class="arrow">→</span>
+                            <span>תוצאות</span>
+                        </div>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-icon">🚀</div>
+                        <h4>מודל ACP</h4>
+                        <p>AI Career Pathway - 4 עמודים להצלחה</p>
+                        <div class="method-pillars">
+                            <span>Training</span>
+                            <span>Mentoring</span>
+                            <span>Community</span>
+                            <span>Agile</span>
+                        </div>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-icon">🎯</div>
+                        <h4>מודל בידול</h4>
+                        <p>מתודולוגיה לזיהוי ייחודיות עסקית</p>
+                        <div class="method-stats">
+                            <span>6 ממדים</span>
+                            <span>5 סוגי בידול</span>
+                        </div>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-icon">🔄</div>
+                        <h4>System Thinking</h4>
+                        <p>ניהול מערכות מסתגלות לארגונים מורכבים</p>
+                        <div class="method-tags">
+                            <span>חשיבה מערכתית</span>
+                            <span>ביזור חכם</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Values -->
+            <div class="brand-block">
+                <h3 class="block-title">
+                    <span class="block-icon">⭐</span>
+                    ערכי ליבה
+                </h3>
+                <div class="values-container">
+                    <div class="value-main">
+                        <span class="value-badge">הערך המרכזי</span>
+                        <p>תוצאות מבוססות ידע ומידע</p>
+                    </div>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <span class="value-icon">🎯</span>
+                            <h4>יישומיות</h4>
+                            <p>פרויקטים אמיתיים, תוצרים מוחשיים</p>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">👥</span>
+                            <h4>קהילה</h4>
+                            <p>למידת עמיתים, רשת תמיכה</p>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🤝</span>
+                            <h4>ליווי אישי</h4>
+                            <p>Mentoring - לא "פס ייצור"</p>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">💡</span>
+                            <h4>חדשנות</h4>
+                            <p>חיבור מתמיד לעדכוני AI ודאטה</p>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">✅</span>
+                            <h4>שקיפות</h4>
+                            <p>מתודולוגיה ברורה, ללא הבטחות שווא</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personas Section -->
+    <section id="personas" class="section personas-section">
+        <div class="container">
+            <h2 class="section-title">קהלי יעד ופרסונות</h2>
+
+            <!-- Audience Overview -->
+            <div class="audience-overview">
+                <h3>המכנה המשותף לכל הקהלים</h3>
+                <div class="common-traits">
+                    <div class="trait">
+                        <span class="trait-icon">🎯</span>
+                        <span class="trait-text">תוצאות מעשיות</span>
+                    </div>
+                    <div class="trait">
+                        <span class="trait-icon">🎓</span>
+                        <span class="trait-text">למידה גמישה</span>
+                    </div>
+                    <div class="trait">
+                        <span class="trait-icon">💭</span>
+                        <span class="trait-text">חשש מטכנולוגיה</span>
+                    </div>
+                    <div class="trait">
+                        <span class="trait-icon">👥</span>
+                        <span class="trait-text">קהילה וליווי</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Persona Cards -->
+            <div class="personas-grid">
+                <!-- Persona 1: Ronit -->
+                <div class="persona-card" data-persona="ronit">
+                    <div class="persona-image">
+                        <img src="images/persona-ronit.png" alt="רונית">
+                        <div class="persona-badge">קבוצה 1</div>
+                    </div>
+                    <div class="persona-summary">
+                        <h3>רונית לוי</h3>
+                        <p class="persona-role">מנהלת חשבונות, 38</p>
+                        <p class="persona-quote">"אני יודעת שיש לי פוטנציאל לתפקיד בכיר יותר, אבל חסרים לי כלים חדשים"</p>
+                        <button class="btn-expand">פרטים נוספים</button>
+                    </div>
+                    <div class="persona-details">
+                        <div class="detail-section">
+                            <h4>🎯 מטרות</h4>
+                            <ul>
+                                <li>מעבר מתפקיד ביצועי לניהולי (Controller/CFO)</li>
+                                <li>שליטה בדאטה ודשבורדים</li>
+                                <li>העלאת שכר ב-30-40%</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>😰 כאבים</h4>
+                            <ul>
+                                <li>תקועה בתפקיד ביצועי 10 שנים</li>
+                                <li>חסר יכולת דאטה מתקדמת</li>
+                                <li>רואה עמיתים מקודמים</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>📱 ערוצים</h4>
+                            <ul>
+                                <li>פייסבוק - קבוצות מקצועיות</li>
+                                <li>גוגל - חיפוש קורסים</li>
+                                <li>ChatGPT - התייעצות קריירה</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>💬 איך לדבר איתה</h4>
+                            <p>חם ומעודד, פרקטי, מרגיע חששות</p>
+                            <div class="tone-tags">
+                                <span class="tag">ליווי אישי</span>
+                                <span class="tag">קהילה</span>
+                                <span class="tag">תיק עבודות</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Persona 2: Yossi -->
+                <div class="persona-card" data-persona="yossi">
+                    <div class="persona-image">
+                        <img src="images/persona-yossi.png" alt="יוסי">
+                        <div class="persona-badge">קבוצה 2</div>
+                    </div>
+                    <div class="persona-summary">
+                        <h3>יוסי כהן</h3>
+                        <p class="persona-role">סמנכ"ל תפעול, 47</p>
+                        <p class="persona-quote">"הגעתי לתקרת הזכוכית בשכירות. עכשיו הזמן להקים ייעוץ עצמאי"</p>
+                        <button class="btn-expand">פרטים נוספים</button>
+                    </div>
+                    <div class="persona-details">
+                        <div class="detail-section">
+                            <h4>🎯 מטרות</h4>
+                            <ul>
+                                <li>מעבר לעצמאות - חברת ייעוץ</li>
+                                <li>בניית מתודולוגיה ייחודית</li>
+                                <li>התמחר 3,000-5,000 ₪ ליום</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>😰 כאבים</h4>
+                            <ul>
+                                <li>תקרת זכוכית בשכירות</li>
+                                <li>חוסר בידול מיועצים אחרים</li>
+                                <li>אין מתודולוגיה מובנית</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>📱 ערוצים</h4>
+                            <ul>
+                                <li>לינקדאין - פעילות יומית</li>
+                                <li>פודקאסטים עסקיים</li>
+                                <li>ספרי ניהול</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>💬 איך לדבר איתו</h4>
+                            <p>מקצועי ואסטרטגי, ממוקד ROI</p>
+                            <div class="tone-tags">
+                                <span class="tag">מתודולוגיה</span>
+                                <span class="tag">בידול</span>
+                                <span class="tag">רשת יועצים</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Persona 3: Michal -->
+                <div class="persona-card" data-persona="michal">
+                    <div class="persona-image">
+                        <img src="images/persona-michal.png" alt="מיכל">
+                        <div class="persona-badge">קבוצה 4</div>
+                    </div>
+                    <div class="persona-summary">
+                        <h3>מיכל גרין</h3>
+                        <p class="persona-role">מזכירה רפואית, 34</p>
+                        <p class="persona-quote">"אני רוצה מקצוע שיאפשר לי לעבוד מהבית ולהרוויח טוב יותר"</p>
+                        <button class="btn-expand">פרטים נוספים</button>
+                    </div>
+                    <div class="persona-details">
+                        <div class="detail-section">
+                            <h4>🎯 מטרות</h4>
+                            <ul>
+                                <li>מעבר לתפקיד דיגיטלי/טכנולוגי</li>
+                                <li>עבודה מהבית - גמישות</li>
+                                <li>שכר 8,000-12,000 ₪</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>😰 כאבים</h4>
+                            <ul>
+                                <li>שכר נמוך, אין התקדמות</li>
+                                <li>עבודה שחיקתית</li>
+                                <li>פחד מאוטומציה</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>📱 ערוצים</h4>
+                            <ul>
+                                <li>פייסבוק - "נשים בעסקים"</li>
+                                <li>אינסטגרם - דפים מעצימים</li>
+                                <li>WhatsApp - קבוצות חברות</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>💬 איך לדבר איתה</h4>
+                            <p>מעצים וחם, פשוט ונגיש, תשלומים</p>
+                            <div class="tone-tags">
+                                <span class="tag">הסבה מקצועית</span>
+                                <span class="tag">גמישות</span>
+                                <span class="tag">קהילת נשים</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Persona 4: Dani -->
+                <div class="persona-card" data-persona="dani">
+                    <div class="persona-image">
+                        <img src="images/persona-dani.png" alt="דני">
+                        <div class="persona-badge">קבוצה 3</div>
+                    </div>
+                    <div class="persona-summary">
+                        <h3>דני לוי</h3>
+                        <p class="persona-role">בוגר כלכלה, 26</p>
+                        <p class="persona-quote">"בריאיון שאלו אותי על Power BI ולא ידעתי מה לענות"</p>
+                        <button class="btn-expand">פרטים נוספים</button>
+                    </div>
+                    <div class="persona-details">
+                        <div class="detail-section">
+                            <h4>🎯 מטרות</h4>
+                            <ul>
+                                <li>התקבלות ל-Big 4</li>
+                                <li>כלים טכניים לתואר התיאורטי</li>
+                                <li>שכר 12,000-15,000 ₪</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>😰 כאבים</h4>
+                            <ul>
+                                <li>תואר תיאורטי ללא כלים</li>
+                                <li>תחרות גבוהה על משרות</li>
+                                <li>פער בין אקדמיה לשוק</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>📱 ערוצים</h4>
+                            <ul>
+                                <li>לינקדאין - בניית פרופיל</li>
+                                <li>יוטיוב - הדרכות טכניות</li>
+                                <li>ChatGPT - למידה עצמית</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>💬 איך לדבר איתו</h4>
+                            <p>ישיר ועניין, ממוקד תוצאות, טכני</p>
+                            <div class="tone-tags">
+                                <span class="tag">תיק עבודות</span>
+                                <span class="tag">Big 4</span>
+                                <span class="tag">למידה מהירה</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Persona 5: Nurit -->
+                <div class="persona-card" data-persona="nurit">
+                    <div class="persona-image">
+                        <img src="images/persona-nurit.png" alt="נורית">
+                        <div class="persona-badge">קבוצה 5</div>
+                    </div>
+                    <div class="persona-summary">
+                        <h3>נורית כהן</h3>
+                        <p class="persona-role">אחות אקדמאית, 42</p>
+                        <p class="persona-quote">"אני מרגישה שחיקה פיזית ורגשית. אני רוצה תפקיד פחות שחיקתי"</p>
+                        <button class="btn-expand">פרטים נוספים</button>
+                    </div>
+                    <div class="persona-details">
+                        <div class="detail-section">
+                            <h4>🎯 מטרות</h4>
+                            <ul>
+                                <li>מעבר למידענות/ניהול מקרה</li>
+                                <li>הפחתת עומס פיזי</li>
+                                <li>עבודה בשעות יום</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>😰 כאבים</h4>
+                            <ul>
+                                <li>שחיקה פיזית ורגשית</li>
+                                <li>משמרות לילה</li>
+                                <li>אין התקדמות ללא תואר</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>📱 ערוצים</h4>
+                            <ul>
+                                <li>פייסבוק - "אחיות ישראל"</li>
+                                <li>גוגל - חיפוש קידום</li>
+                                <li>WhatsApp - צוות מחלקה</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>💬 איך לדבר איתה</h4>
+                            <p>אמפתי וחם, מעצים, פשוט ונגיש</p>
+                            <div class="tone-tags">
+                                <span class="tag">מידענות רפואית</span>
+                                <span class="tag">קהילת אחיות</span>
+                                <span class="tag">ללא תואר נוסף</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Persona 6: Sharon -->
+                <div class="persona-card" data-persona="sharon">
+                    <div class="persona-image">
+                        <img src="images/persona-sharon.png" alt="שרון">
+                        <div class="persona-badge">קבוצה 6</div>
+                    </div>
+                    <div class="persona-summary">
+                        <h3>שרון כהן</h3>
+                        <p class="persona-role">סוכנת נסיעות, 43</p>
+                        <p class="persona-quote">"אני מוכרת טיולים יקרים - אבל לא יודעת איך למשוך לקוחות באינטרנט"</p>
+                        <button class="btn-expand">פרטים נוספים</button>
+                    </div>
+                    <div class="persona-details">
+                        <div class="detail-section">
+                            <h4>🎯 מטרות</h4>
+                            <ul>
+                                <li>בניית זרם לקוחות יציב</li>
+                                <li>שיווק דיגיטלי + AI לתוכן</li>
+                                <li>הגדלת מכירות ב-30-50%</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>😰 כאבים</h4>
+                            <ul>
+                                <li>תחרות מאתרי הזמנות</li>
+                                <li>תלויה בהמלצות מפה לאוזן</li>
+                                <li>לא יודעת לבנות משפך מכירה</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>📱 ערוצים</h4>
+                            <ul>
+                                <li>פייסבוק - קבוצות סוכנים</li>
+                                <li>אינסטגרם - תמונות טיולים</li>
+                                <li>ChatGPT - כתיבת תוכן</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>💬 איך לדבר איתה</h4>
+                            <p>ישיר ומעשי, ממוקד ROI, אמפתי</p>
+                            <div class="tone-tags">
+                                <span class="tag">שיווק דיגיטלי</span>
+                                <span class="tag">AI לתוכן</span>
+                                <span class="tag">משפכי מכירה</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img src="images/logo.png" alt="בר-אוריין" class="footer-logo">
+            <p>Brand Hub | מכללת בר-אוריין</p>
+            <p class="footer-tagline">ממידע לתוצאות בעידן ה-AI</p>
+        </div>
+    </footer>
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast">הועתק ללוח!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
