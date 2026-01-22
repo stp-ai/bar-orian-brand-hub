@@ -98,7 +98,7 @@ body {
 }
 
 .nav-logo {
-    height: 40px;
+    height: 60px;
     width: auto;
 }
 
@@ -1056,6 +1056,409 @@ body {
     padding: 2px 10px;
     border-radius: var(--radius-sm);
     font-size: 0.8rem;
+}
+
+/* ==========================================
+   Archetype Background Icons
+   ========================================== */
+.archetype-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.archetype-bg-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.archetype-bg-icon {
+    position: absolute;
+    opacity: 0.06;
+}
+
+.archetype-bg-icon.sage-icon {
+    width: 300px;
+    height: 300px;
+    top: -50px;
+    right: -50px;
+    color: var(--color-navy);
+}
+
+.archetype-bg-icon.caregiver-icon {
+    width: 250px;
+    height: 250px;
+    bottom: -30px;
+    left: -30px;
+    color: var(--color-orange);
+}
+
+.archetype-container {
+    position: relative;
+    z-index: 1;
+}
+
+.archetype-icon svg {
+    width: 40px;
+    height: 40px;
+    stroke: var(--color-navy);
+}
+
+.archetype-card.caregiver .archetype-icon svg {
+    stroke: var(--color-orange);
+}
+
+/* Color Grid 3 Columns */
+.color-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+    .color-grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Methods Grid 3 Columns */
+.methods-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+
+@media (max-width: 768px) {
+    .methods-grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================
+   New Sections Styles
+   ========================================== */
+
+/* Offerings Grid */
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.offering-card {
+    background: var(--color-bg-light);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.offering-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-sm);
+}
+
+.offering-card h4 {
+    color: var(--color-navy);
+    margin-bottom: var(--space-xs);
+}
+
+.offering-card p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+}
+
+.offerings-value {
+    text-align: center;
+    padding: var(--space-md);
+    background: linear-gradient(135deg, var(--color-navy), var(--color-cyan));
+    color: var(--color-white);
+    border-radius: var(--radius-md);
+}
+
+.offerings-value p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .offerings-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Social Proof */
+.social-proof-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-md);
+}
+
+.proof-logo {
+    background: var(--color-bg-light);
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    color: var(--color-navy);
+    min-width: 150px;
+    text-align: center;
+}
+
+.social-proof-text {
+    text-align: center;
+    color: var(--color-text-light);
+    font-style: italic;
+}
+
+/* Brand Dictionary */
+.dictionary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.dictionary-column {
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+}
+
+.dictionary-column.prefer {
+    background: #E8F5E9;
+    border-right: 4px solid #4CAF50;
+}
+
+.dictionary-column.avoid {
+    background: #FFEBEE;
+    border-right: 4px solid #F44336;
+}
+
+.dictionary-column h4 {
+    margin-bottom: var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.dictionary-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dictionary-column li {
+    padding: var(--space-xs) 0;
+    padding-right: var(--space-md);
+    position: relative;
+}
+
+.dictionary-column.prefer li::before {
+    content: '✓';
+    position: absolute;
+    right: 0;
+    color: #4CAF50;
+}
+
+.dictionary-column.avoid li::before {
+    content: '✗';
+    position: absolute;
+    right: 0;
+    color: #F44336;
+}
+
+@media (max-width: 768px) {
+    .dictionary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Logo Rules */
+.logo-rules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
+.logo-rule {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+    background: var(--color-bg-light);
+    border-radius: var(--radius-md);
+}
+
+.logo-rule.do {
+    border-right: 4px solid #4CAF50;
+}
+
+.logo-rule.dont {
+    border-right: 4px solid #F44336;
+}
+
+.rule-icon {
+    font-size: 1.5rem;
+}
+
+.logo-rule p {
+    margin: 0;
+    color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+    .logo-rules-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================
+   Personas Page Styles
+   ========================================== */
+
+/* Hero Personas Variant */
+.hero-personas {
+    min-height: 60vh;
+}
+
+/* Common Traits Extended */
+.common-traits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
+.trait {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    background: var(--color-bg-light);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    border-right: 4px solid var(--color-cyan);
+}
+
+.trait-icon {
+    font-size: 1.5rem;
+}
+
+.trait-text {
+    font-weight: 700;
+    color: var(--color-navy);
+    font-size: 1.1rem;
+}
+
+.trait-desc {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .common-traits {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Audience Groups Grid */
+.audience-groups-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.audience-group {
+    background: var(--color-bg-light);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border-top: 4px solid var(--color-cyan);
+}
+
+.audience-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.audience-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--color-navy);
+    color: var(--color-white);
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.audience-header h4 {
+    color: var(--color-navy);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.audience-who,
+.audience-need,
+.audience-courses {
+    margin-bottom: var(--space-md);
+}
+
+.audience-who strong,
+.audience-need strong,
+.audience-courses strong {
+    display: block;
+    color: var(--color-navy);
+    margin-bottom: var(--space-xs);
+    font-size: 0.9rem;
+}
+
+.audience-who ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.audience-who li {
+    padding: 4px 0;
+    padding-right: var(--space-md);
+    position: relative;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+.audience-who li::before {
+    content: '•';
+    position: absolute;
+    right: 0;
+    color: var(--color-cyan);
+}
+
+.audience-need p {
+    margin: 0;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+.course-tag {
+    display: inline-block;
+    background: var(--color-orange);
+    color: var(--color-white);
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    margin: 2px;
+}
+
+@media (max-width: 768px) {
+    .audience-groups-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ==========================================
